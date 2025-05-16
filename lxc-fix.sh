@@ -97,6 +97,7 @@ case "$CONFIRM" in
   [Nn]* )
     echo "❌ No changes made. Exiting..."
     pct unmount "$CTID"
+    pct start "$CTID"
     exit 0
     ;;
   * )
